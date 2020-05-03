@@ -1,0 +1,257 @@
+@import 'fonts';
+@import 'global';
+// HEADER start
+.header {
+    padding-top: 37px;
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: flex;
+        &-img {
+            margin: 0 5px 0 10px;
+        }
+        &-content {
+            color: #fff;
+            line-height: 30px;
+            .logo-title {
+                font-family: "FlareLightGothic";
+                font-size: 39px;
+            }
+            .logo-subtitle {
+                font-family: "FranklinGothicBook";
+                font-size: 17px;
+                line-height: 39px;
+            }
+        }
+    }
+    .header_dropDown-menu {
+        display: none;
+        justify-content: flex-end;
+        .line-box {
+            cursor: pointer;
+        }
+        .line {
+            width: 60px;
+            height: 8px;
+            background-color: #d7d7e3;
+        }
+        .line+.line {
+            margin-top: 10px;
+        }
+    }
+    .menu {
+        // display: none;
+        margin-right: 75px;
+        &__list-item {
+            display: inline-block;
+            a {
+                padding: 7px 10px 7px 14px;
+                border-radius: 5px;
+                font-family: "Colaborate-Light", sans-serif;
+                font-size: 17px;
+                color: #d7d7e3;
+                transition: all .5s;
+                &:hover {
+                    background-color: #fff;
+                    color: #161628;
+                }
+            }
+        }
+    }
+}
+
+// HEADER end
+// BIGSLIDER start
+.bigSlider__inner {
+    width: 100%;
+    margin-top: 50px;
+    &-item {
+        max-width: 740px;
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        margin: 0 auto;
+        .item__contentBox {
+            text-align: right;
+            text-align: -webkit-right;
+            margin-right: 40px;
+            color: #e7e8ea;
+            &-title {
+                font-family: "ChunkFive";
+                font-size: 45px;
+                text-transform: uppercase;
+                margin-top: 40px;
+            }
+            &-subtitle {
+                font-family: "AlexandriaFLF";
+                font-size: 39px;
+                span {
+                    font-family: "AlexandriaFLF-Bold";
+                }
+            }
+            &-text {
+                width: 185px;
+                font-family: "Colaborate-Thin", sans-serif;
+                font-size: 23px;
+                margin: 5px 0 20px;
+            }
+            &-link {
+                padding: 13px 39px;
+                border: 1px solid #6e9ad8;
+                border-radius: 5px;
+                background-image: linear-gradient( to bottom, #2d6bc2, #174183);
+                font-family: "Colaborate-Medium", sans-serif;
+                font-size: 23px;
+                color: #fff;
+                margin-bottom: 25px;
+                transition: all .5s;
+                &:hover {
+                    background-image: linear-gradient( to top, #2d6bc2, #174183);
+                }
+            }
+            .shadow__link {
+                width: 185px;
+                height: 24px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-right: 3px;
+            }
+        }
+        .item-img {
+            width: 471px;
+            height: 383px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 125px;
+        z-index: 10;
+        &::before {
+            content: '';
+            width: 39px;
+            height: 39px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+    }
+    .slick-prev {
+        content: '';
+        left: -32px;
+        &::before {
+            background-image: url(../images/prev.png);
+        }
+    }
+    .slick-next {
+        right: -32px;
+        &::before {
+            background-image: url(../images/next.png);
+        }
+    }
+}
+
+// BIGSLIDER end
+// FEATURES start
+.features {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            width: 257px;
+            height: 172px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 13px 0 15px;
+            position: relative;
+            .features__item-img {
+                width: 100%;
+                text-align: center;
+            }
+            .features__item-title {
+                font-family: "FranklinGothicBook";
+                font-size: 19px;
+                color: #434353;
+            }
+        }
+        &-item.box1 {
+            .features__item-img {
+                text-align: right;
+                margin-right: 10px;
+            }
+            &::before {
+                content: '';
+                width: 28px;
+                height: 32px;
+                background-image: url(../images/e_box1.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 24px;
+                top: 28px;
+            }
+        }
+        &-item.box4 {
+            &::before {
+                content: '';
+                width: 58px;
+                height: 55px;
+                background-image: url(../images/new_box4.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 6px;
+                top: 8px;
+            }
+        }
+    }
+    &__inner.bottom {
+        color: #505050;
+        margin: 0 15px;
+        .features__inner-item {
+            max-width: 300px;
+            width: 100%;
+            display: block;
+            .features__icon {
+                display: flex;
+                justify-content: flex-start;
+                font-family: "Colaborate-Light", sans-serif;
+                .features__icon-img {
+                    margin-right: 10px;
+                }
+                .features__icon-content {
+                    .icon-title {
+                        font-size: 25px;
+                        line-height: 23px;
+                    }
+                    .icon-subtitle {
+                        font-size: 15px;
+                        color: #5f7390;
+                    }
+                }
+            }
+        }
+        .features__text {
+            height: 55px;
+            overflow: hidden;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+}
+
+// FEATURES end
