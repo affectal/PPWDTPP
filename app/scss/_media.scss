@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    .header {
+        .menu {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 955px) {
+    .header {
+        .menu {
+            display: none;
+        }
+        .line__box {
+            display: block;
+        }
+    }
+    .bigSlider__inner {
+        margin-top: 20px;
+    }
+}
