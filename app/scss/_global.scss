@@ -63,6 +63,7 @@ body {
     padding: 0 60px;
     &__inner {
         max-width: 936px;
+        background-color: #e7e8ea;
         margin: 0 auto;
     }
 }
@@ -75,6 +76,16 @@ body {
 
 .subtitle {
     font-family: "Colaborate-Light", sans-serif;
-    font-size: px;
+    font-size: 15px;
     color: #5f7390;
+}
+
+.link {
+    border-radius: 5px;
+    background-image: linear-gradient( to bottom, #2d6bc2, #174183);
+    font-family: "Colaborate-Regular", sans-serif;
+    font-size: 19px;
+    &:hover {
+        background-image: linear-gradient( to top, #2d6bc2, #174183);
+    }
 }

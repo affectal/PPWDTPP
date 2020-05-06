@@ -104,14 +104,9 @@
             &-link {
                 padding: 13px 39px;
                 border: 1px solid #6e9ad8;
-                border-radius: 5px;
-                background-image: linear-gradient( to bottom, #2d6bc2, #174183);
                 font-family: "Colaborate-Medium", sans-serif;
                 font-size: 23px;
                 margin-bottom: 25px;
-                &:hover {
-                    background-image: linear-gradient( to top, #2d6bc2, #174183);
-                }
             }
             .shadow__link {
                 width: 185px;
@@ -338,32 +333,6 @@
         video {
             object-fit: contain;
         }
-        .list {
-            margin: 50px 30px 30px;
-            list-style: none;
-            &__link {
-                position: relative;
-                padding-left: 25px;
-                &::before {
-                    content: '';
-                    width: 14px;
-                    height: 14px;
-                    background-image: url(../images/bullet.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    top: 2px;
-                    left: 0;
-                }
-                a {
-                    font-size: 15px;
-                    color: #828181;
-                }
-            }
-            li+li {
-                margin-top: 15px;
-            }
-        }
     }
     .link__inner {
         display: flex;
@@ -376,14 +345,34 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
-        background-image: linear-gradient( to bottom, #2d6bc2, #174183);
-        font-family: "Colaborate-Regular", sans-serif;
-        font-size: 19px;
         margin-left: 30px;
-        &:hover {
-            background-image: linear-gradient( to top, #2d6bc2, #174183);
+    }
+}
+
+.list {
+    margin: 50px 30px 30px;
+    list-style: none;
+    &__link {
+        position: relative;
+        padding-left: 25px;
+        &::before {
+            content: '';
+            width: 14px;
+            height: 14px;
+            background-image: url(../images/bullet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 2px;
+            left: 0;
         }
+        a {
+            font-size: 15px;
+            color: #828181;
+        }
+    }
+    li+li {
+        margin-top: 15px;
     }
 }
 
@@ -474,10 +463,9 @@
 }
 
 // SEARCH end
-// PRODUCT start
-.product__slider {
+// PRODUCTS start
+.products__slider {
     width: 100%;
-    background-color: #e7e8ea;
     &-item {
         width: 100%;
         display: flex !important;
@@ -501,16 +489,8 @@
             margin-left: 10px;
         }
         .slider__item-link {
-            font-family: "Colaborate-Regular", sans-serif;
-            font-size: 19px;
-            text-align: center;
-            border-radius: 5px;
-            background-image: linear-gradient( to bottom, #2d6bc2, #174183);
             padding: 11px 24px;
             margin: 20px 0 70px 15px;
-            &:hover {
-                background-image: linear-gradient( to top, #2d6bc2, #174183);
-            }
         }
     }
     .prodSlick-btn {
@@ -572,7 +552,7 @@
     }
 }
 
-.productPage__inner {
+.productsPage__inner {
     max-width: 800px;
     width: 100%;
     margin: 40px auto 0;
@@ -585,41 +565,128 @@
         width: 100%;
         display: flex;
         margin-bottom: 65px;
-        .productPage__item-img {
+        .productsPage__item-img {
             width: 110px;
             height: 87px;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
         }
-        .productPage__item-box {
+        .productsPage__item-box {
             margin-left: 15px;
-            .productPage__item-title {
+            .productsPage__item-title {
                 font-size: 22.59px;
             }
-            .productPage__item-subtitle {
+            .productsPage__item-subtitle {
                 font-size: 12.55px;
             }
-            .productPage__item-link {
-                font-family: "Colaborate-Regular", sans-serif;
+            .productsPage__item-link {
                 font-size: 13.85px;
-                background-image: linear-gradient(to bottom, #5e5e78, #434356);
-                border-radius: 5px;
                 padding: 8px 15px;
                 margin-top: 10px;
-                &:hover {
-                    background-image: linear-gradient(to top, #5e5e78, #434356);
-                }
             }
         }
     }
 }
 
-.productPage__inner.recent {
+.productsPage__inner.recent {
     display: none;
 }
 
-// PRODUCT end
+// PRODUCTS end
+// PRODUCTINNER start
+.productInnerPage {
+    font-family: "Colaborate-Light", sans-serif;
+    &__title-box {
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    &__title {
+        font-size: 31px;
+        padding-top: 40px;
+    }
+    .tm {
+        padding-top: 30px;
+    }
+    &__sale {
+        width: 100%;
+        height: 381px;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__logo {
+        display: flex;
+        margin-top: -35px;
+        &-img {
+            margin: 0 5px 0 10px;
+            img {
+                width: 31px;
+                height: 31px;
+            }
+        }
+        &-content {
+            color: #fff;
+            line-height: 25px;
+            .logo-title {
+                font-family: "FlareLightGothic";
+                font-size: 32.7px;
+            }
+            .logo-subtitle {
+                font-family: "FranklinGothicBook";
+                font-size: 14.25px;
+            }
+        }
+    }
+    &__offer {
+        width: 131px;
+        height: 131px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: "Colaborate-Light", sans-serif;
+        padding: 25px 10px 0;
+        position: absolute;
+        top: 95px;
+        right: 213px;
+        &-price {
+            font-size: 39px;
+        }
+        &-text {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+    &__link {
+        width: 130px;
+        padding: 10px 30px 7px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-size: 15px;
+        color: #828181;
+        margin-top: 15px;
+        padding-right: 120px;
+    }
+    &__list-inner {
+        margin-left: 50px;
+        .productInnerPage__title {
+            margin-left: 5px;
+        }
+        .list {
+            margin: 20px 0 95px;
+        }
+    }
+}
+
+// PRODUCTINNER end
 // FOOTER start
 .footer {
     height: 290px;
