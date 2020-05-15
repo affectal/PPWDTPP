@@ -95,3 +95,16 @@ body {
         background-image: linear-gradient( to bottom, #48485c, #373748);
     }
 }
+
+.btn {
+    width: 95px;
+    height: 34px;
+    background-image: linear-gradient( to bottom, #40404e, #2d2c3d);
+    color: #fff;
+    border-radius: 6px;
+    font-family: "Colaborate-Regular", sans-serif;
+    font-size: 19px;
+    &:hover {
+        background-image: linear-gradient( to bottom, #2d2c3d, #40404e);
+    }
+}

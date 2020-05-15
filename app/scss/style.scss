@@ -1280,4 +1280,210 @@
 }
 
 // FOOTER end
+// MODAL start
+#payment {
+    display: none;
+    max-width: 675px;
+    width: 100%;
+    background-color: #e9e8e8;
+    border-radius: 6px;
+    font-family: "Colaborate-Light", sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    .payment__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .left-box {
+            max-width: 375px;
+            width: 100%;
+            padding: 35px 0 40px 30px;
+            .left-box__title {
+                line-height: 23px;
+            }
+            .left-box__subtitle {
+                line-height: 20px;
+            }
+            &__form {
+                fieldset {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .left-box__inner {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin: 17px 0;
+                    background-color: #dcdcdc;
+                    border: 1px solid #ccc8c8;
+                    border-radius: 6px;
+                    padding: 12px 15px;
+                    .spinner {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 33px;
+                        height: 39px;
+                        margin-left: 10px;
+                        input[type="number"] {
+                            width: 33px;
+                            height: 23px;
+                            border: 1px solid #ccc8c8;
+                            background-color: #e9e8e8;
+                            font-size: 21px;
+                            color: #b3abab;
+                            text-align: center;
+                        }
+                        input[type="number"]::-webkit-inner-spin-button,
+                        input[type="number"]::-webkit-outer-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0px;
+                        }
+                        .up,
+                        .down {
+                            width: 16px;
+                            height: 16px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-image: linear-gradient( to bottom, #cbc5c5, #7e7979);
+                            cursor: pointer;
+                            &:hover {
+                                background-image: linear-gradient( to top, #cbc5c5, #7e7979);
+                            }
+                        }
+                    }
+                    .left-box__title {
+                        margin-left: 25px;
+                    }
+                }
+                .left-box__price {
+                    font-size: 23px;
+                    line-height: 23px;
+                    span {
+                        color: #3d3d4d;
+                    }
+                }
+            }
+            .card {
+                position: relative;
+                margin: 15px 0 40px;
+                input {
+                    width: 100%;
+                    height: 40px;
+                    padding: 13px 17px;
+                    border: 1px solid #c9c9c9;
+                    font-size: 21px;
+                    color: #9d9d9d;
+                    border-radius: 6px;
+                    background-color: #eff1f4;
+                }
+                .left-box__form-btn {
+                    position: absolute;
+                    right: 3px;
+                    top: 3px;
+                }
+            }
+            &__inner {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .left-box__text {
+                    margin-left: 13px;
+                }
+            }
+        }
+        .line-pay {
+            width: 1px;
+            height: 304px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 22px;
+        }
+        .right-box {
+            &__inner {
+                display: flex;
+                margin: 58px 0 85px;
+            }
+            &__title-box {
+                margin-left: 15px;
+            }
+            .right-box__title {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+#login {
+    display: none;
+    max-width: 400px;
+    width: 100%;
+    background-color: #e9e8e8;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 6px;
+    font-family: "Colaborate-Light", sans-serif;
+    padding: 27px 50px 15px;
+    margin: 0 auto;
+    .login__inner {
+        width: 100%;
+        .login-form {
+            margin-top: 27px;
+            input {
+                width: 297px;
+                background-color: #eff1f4;
+                border: 1px solid #9d9d9d;
+                border-radius: 5px;
+                padding: 10px 16px;
+                margin: 0 0 16px 4px;
+                &::placeholder {
+                    font-size: 17px;
+                    color: #9d9d9d;
+                }
+            }
+            .login__link {
+                margin: 10px 0 0 10px;
+            }
+            .login__btn {
+                float: right;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+#confirm {
+    display: none;
+    max-width: 425px;
+    width: 100%;
+    background-color: #e9e8e8;
+    border-radius: 6px;
+    font-family: "Colaborate-Light", sans-serif;
+    margin: 0 auto;
+    .confirm__inner {
+        width: 100%;
+        padding: 20px 43px 12px;
+    }
+    .confirm__title {
+        font-size: 21px;
+    }
+    .confirm__buttons {
+        display: flex;
+        margin: 15px 0 0 4px;
+        .btn+.btn {
+            margin-left: 23px;
+        }
+    }
+    .confirm__button {
+        display: flex;
+        align-items: center;
+        img {
+            margin: 0 15px 0 10px;
+        }
+    }
+}
+
+// MODAL end
 @import 'media';

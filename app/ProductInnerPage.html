@@ -109,7 +109,7 @@
                                 <div class="productInnerPage__offer-text">Special Season Offer</div>
                             </div>
                         </div>
-                        <div class="productInnerPage__link"><a class="link" href="#">Buy now</a></div>
+                        <div class="productInnerPage__link"><a data-fancybox data-src="#payment" data-modal="true" href="javascript:;" class="link" href="#">Buy now</a></div>
                         <div class="productInnerPage__title title tm">Dublin’s iphone applications</div>
                         <div class="productInnerPage__text">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
@@ -161,7 +161,7 @@
                     <div class="inner__bottom-item">
                         <div class="inner__bottom-title">Newsletter</div>
                         <div class="inner__bottom-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</div>
-                        <form class="footer__form-left" action="">
+                        <form class="footer__form-left">
                             <input type="text" placeholder="enter your email address" required>
                             <button class="footer__btn" type="submit">Subscribe</button>
                         </form>
@@ -176,12 +176,12 @@
                         <form class="footer__form-right">
                             <div class="form-inner">
                                 <div class="form-left">
-                                    <label><input type="text"></label>
-                                    <label><input type="text"></label>
-                                    <label><input type="text"></label>
+                                    <label><input type="text" required></label>
+                                    <label><input type="text" required></label>
+                                    <label><input type="text" required></label>
                                 </div>
                                 <div class="form-right">
-                                    <label><textarea></textarea></label>
+                                    <label><textarea required></textarea></label>
                                     <button class="footer__btn" type="submit">Submit</button>
                                 </div>
                             </div>
@@ -191,12 +191,81 @@
             </div>
         </section>
 
+        <div id="payment">
+            <div class="payment__inner">
+                <div class="left-box">
+                    <div class="left-box__title title">Dublin’s iphone applications</div>
+                    <div class="left-box__subtitle subtitle">Lorem Ipsum is simply dummy</div>
+                    <form class="left-box__form">
+                        <fieldset>
+                            <div class="left-box__inner">
+                                <img src="images/ipad_pay.png" alt="">
+
+                                <div class="spinner">
+                                    <input type="number" value="02" max="10" min="1">
+                                    <div class="down"><img src="images/down.png" alt=""></div>
+                                    <div class="up"><img src="images/up.png" alt=""></div>
+                                </div>
+
+                                <div class="left-box__title title">i pad application</div>
+                            </div>
+
+                            <div class="left-box__price title">Total: <span>155 $</span></div>
+                            <div class="card">
+                                <input type="text" placeholder="Credit card number" required>
+                                <button type="submit" data-fancybox data-src="#login" data-modal="true" href="javascript:;" class="left-box__form-btn btn">Pay now</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="left-box__inner">
+                        <img src="images/i_icon.png" alt="">
+                        <div class="left-box__text text">printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </div>
+                    </div>
+                </div>
+                <div class="line-pay" style="background-image: url(images/line.png);"></div>
+                <div class="right-box">
+                    <div class="right-box__inner">
+                        <img src="images/pp_icon.png" alt="">
+                        <div class="right-box__title-box">
+                            <div class="right-box__title title">Paypal</div>
+                            <div class="right-box__subtitle subtitle">Lorem Ipsum is</div>
+                        </div>
+                    </div>
+                    <img src="images/secure.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="login" style="background-image: url(images/login_bg.png);">
+            <div class="login__inner">
+                <div class="login__title title">Member Login</div>
+                <div class="login__subtitle subtitle">Lorem Ipsum is simply dummy</div>
+                <form class="login-form">
+                    <input type="text" placeholder="User name" required>
+                    <input type="text" placeholder="Password" required>
+                    <a class="login__link subtitle" href="#">Lost password</a>
+                    <button data-fancybox data-src="#confirm" data-modal="true" href="javascript:;" class="login__btn btn" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div id="confirm">
+            <div class="confirm__inner">
+                <div class="confirm__title title">You want do Continue with the operation</div>
+                <div class="confirm__subtitle subtitle">Lorem Ipsum is simply dummy</div>
+                <div class="confirm__buttons">
+                    <button type="submit" class="confirm__button yes btn">
+                        <img src="images/ok.png" alt="">Yes</button>
+                    <button type="submit" class="confirm__button no btn">
+                        <img src="images/no.png" alt="">No</button>
+                </div>
+            </div>
+        </div>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js "></script>
-        <script src="js/libs.min.js "></script>
-        <script src="js/main.js "></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+
     </div>
 </body>
 

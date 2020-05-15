@@ -98,17 +98,35 @@ $(function() {
     });
 
 
-    $('#pagination-container').pagination({
-        dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
-        pageSize: 5,
-        showPrevious: true,
-        showNext: true,
-        callback: function(data, pagination) {
-            // template method of yourself
-            var html = template(data);
-            $('#data-container').html(html);
-        }
-    })
+    // $('#pagination-container').pagination({
+    //     dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+    //     pageSize: 5,
+    //     showPrevious: true,
+    //     showNext: true,
+    //     callback: function(data, pagination) {
+    //         // template method of yourself
+    //         var html = template(data);
+    //         $('#data-container').html(html);
+    //     }
+    // })
+
+
+    $('.down').click(function() {
+        var $input = $(this).parent().find('input[type="number"]');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        if (count < 10) { $input.val('0' + count); } else $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.up').click(function() {
+        var $input = $(this).parent().find('input[type="number"]');
+        var count = parseInt($input.val()) + 1;
+        count = count > 20 ? 1 : count;
+        if (count < 10) { $input.val('0' + count); } else $input.val(count);
+        $input.change();
+        return false;
+    });
 
 
 });
