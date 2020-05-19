@@ -62,6 +62,10 @@
                     color: #161628;
                 }
             }
+            a.active {
+                background-color: #fff;
+                color: #161628;
+            }
         }
     }
 }
@@ -1182,7 +1186,7 @@
         .inner__top-item {
             margin-left: 30px;
             .text {
-                font-family: "Contra";
+                font-family: "Contra", sans-serif;
                 font-size: 13px;
                 color: #b0b0b0;
             }
